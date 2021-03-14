@@ -15,7 +15,7 @@ Rails.application.routes.draw do
   #   get '/sign_in' => 'devise/sessions#new' # custom path to login/sign_in
   #   get '/sign_up' => 'devise/registrations#new', as: 'new_account_registration' # custom path to sign_up/registration
   # end
-  root to: "home#index"
+  root to: 'public#index'
 end
 
 
