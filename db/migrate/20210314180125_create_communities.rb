@@ -1,7 +1,7 @@
 class CreateCommunities < ActiveRecord::Migration[6.1]
   def change
     create_table :communities do |t|
-      t.references :user
+      t.references :users
       t.string :name
       t.string :url
       t.text :rules
