@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  devise_for :users
+  devise_for :accounts
   get "u/:username" => "public#profile", as: :profile
 
   resources :communities do
@@ -17,6 +17,3 @@ Rails.application.routes.draw do
   # end
   root to: 'public#index'
 end
-
-
-
