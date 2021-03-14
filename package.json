@@ -1,5 +1,5 @@
 {
-  "name": "reddit",
+  "name": "rails-reddit",
   "private": true,
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
