@@ -12,8 +12,6 @@ gem 'pg', '~> 1.2.3'
 gem 'puma', '~> 5.0'
 # Use devise for logins
 gem 'devise'
-# Use Puma as the app server
-gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 6'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
