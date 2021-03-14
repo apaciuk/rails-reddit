@@ -9,8 +9,10 @@
                  <a class="btn btn-white dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <%= current_account.username %>
           </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-           
+         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <%= link_to "Profile", profile_path(current_account.username), class: "dropdown-item" %>
+            <%= link_to "Settings", edit_account_registration_path, class: "dropdown-item" %>
+            <%= link_to "Sign Out", destroy_account_session_path, method: :delete, class: "dropdown-item" %>
           </div>
         </div>
         <div class="karma float-left mt-2 mr-2">
