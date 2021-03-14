@@ -1,5 +1,5 @@
 class CommunitiesController < ActionController
-before_authentification :authenticate_user!, except: [ :show ]
+before_authentification :authenticate_user!, except: [ :index, :show ]
 def index  
 end
 
