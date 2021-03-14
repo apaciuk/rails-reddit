@@ -16,9 +16,13 @@
           </div>
         </div>
         <div class="karma float-left mt-2 mr-2">
-       
+          <%= current_account.karma %>
           <span class="fa fa-star text-warning"></span>
         </div>
+        <% else %>
+          <%= link_to "Log In", new_account_session_path, class: "btn btn-outline-primary" %>
+          <%= link_to "Sign Up", new_account_registration_path, class: "btn btn-primary" %>
+        <% end %>
        
       </div>
       <p class="h3"><%= link_to "Awesome Rails Reddit Ripoff", root_path %></p>
